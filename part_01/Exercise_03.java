@@ -12,6 +12,14 @@ package part_01;
  */
 
 public class Exercise_03 {
+    public static void main(String[] args){
+        System.out.println(
+                " *          J    A  V     V  A\n" +
+                " *          J   A A  V   V  A A\n" +
+                " *         JJ  AAAAA  V V  AAAAA\n" +
+                " *      JJJJJ A     A  V  A     A");
+    }
+
 
 }
 

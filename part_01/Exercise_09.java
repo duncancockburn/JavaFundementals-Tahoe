@@ -8,5 +8,13 @@ package part_01;
  *
  */
 public class Exercise_09 {
+    public static void main(String[] args) {
+        double w = 2.4;
+        double h = 6.4;
+        System.out.println(w+w+h+h);
+    }
+
+
+
 
 }
