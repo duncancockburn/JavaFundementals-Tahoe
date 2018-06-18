@@ -8,7 +8,16 @@ package part_02;
  *
  */
 public class Exercise_09 {
-
+    public static void main(String[] args) {
+  char ch = 'z';
+      do {
+        System.out.println("Reverse alphabet is: " + ch);
+        ch--;
+    } while (ch > 'a');
 }
+}
+
+
+
 
 

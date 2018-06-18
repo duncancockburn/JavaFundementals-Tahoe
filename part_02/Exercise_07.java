@@ -13,7 +13,25 @@ import java.util.Scanner;
  *
  */
 public class Exercise_07 {
+    public static void main(String[] args)
+        throws java.io.IOException{
+        Scanner scan = new Scanner(System.in);
+        System.out.println("enter number of minutes between 0 and 1000000000");
+        int minutes = scan.nextInt();
+        int year = minutes / (24*60*365);
+        System.out.println(year);
+        double mod = minutes % (24*60*365);
+        System.out.println(mod);
+        double a = (mod*60*24);
+        System.out.println(a);
 
+        //gives the number of years. now need to work out days which will be remainder * 365
+ //           long remainder = (year*356*24*60) % minutes;
+ //           System.out.println(remainder);
+   //
+     //       long days = remainder/(365*24);
+       //     System.out.println("this is " + year + "years and" + days + "days");
+    }
 }
 
 

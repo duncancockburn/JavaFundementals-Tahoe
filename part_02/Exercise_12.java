@@ -17,5 +17,32 @@ import java.util.Scanner;
  */
 
 public class Exercise_12 {
+    public static void main(String[] args)
+            throws java.io.IOException {
 
+        long miles;
+        double mpg;
+        double price;
+
+        Scanner scan = new Scanner(System.in);
+
+        do {
+            System.out.println("Enter valid miles:");
+            miles = scan.nextLong();
+        } while (miles < 1);
+
+        do {
+            System.out.println("Enter valid mpg amount:");
+            mpg = scan.nextDouble();
+        } while (mpg < 1);
+
+        do {
+            System.out.println("Enter valid price:");
+            price = scan.nextDouble();
+        } while (price < 1);
+
+        System.out.println(miles / mpg * price);
+    }
 }
+
+

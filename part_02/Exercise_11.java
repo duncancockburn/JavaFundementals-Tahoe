@@ -18,7 +18,34 @@ import java.util.Scanner;
  */
 
 public class Exercise_11 {
+    public static void main(String[] args)
+            throws java.io.IOException {
 
+        long investment;
+        double rate;
+        int years;
+
+        Scanner scan = new Scanner(System.in);
+
+        do {
+            System.out.println("Enter valid investment amount:");
+            investment = scan.nextLong();
+        } while (investment < 1);
+
+        do {
+            System.out.println("Enter valid interest rate:");
+            rate = scan.nextDouble();
+        } while (rate > 1);
+
+        do {
+            System.out.println("Enter valid years");
+            years = scan.nextInt();
+        } while (years > 1);
+
+            double numerator = Math.pow((1 + rate), years);
+            System.out.println(investment + numerator / rate);
+
+
+
+    }
 }
-
-

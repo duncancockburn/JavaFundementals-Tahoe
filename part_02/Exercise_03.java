@@ -12,5 +12,17 @@ import java.util.Scanner;
  */
 
 public class Exercise_03 {
+    public static void main(String[] args)
+        throws java.io.IOException{
+
+            Scanner scan = new Scanner(System.in);
+
+
+            System.out.println("Enter number of feet");
+
+            double f = (double) System.in.read();
+
+
+        }
 
 }

@@ -16,5 +16,22 @@ public class Exercise_03 {
 
     public static void main(String[] strings) {
 
+        int a = 4;
+        int b = 9;
+        int count = 1;
+
+
+        int[][] arrayName = new int[a][b];
+
+        for (int i = 0; i < arrayName.length ; i++) {
+            for (int j = 0; j < arrayName[i].length ; j++) {
+                arrayName[i][j] = count;
+                count++;
+
+                System.out.print(arrayName[i][j]);
+
+            }
+            System.out.println();
+        }
     }
 }

@@ -1,8 +1,17 @@
 1) What is a Java package?
+A package is a namespace that organizes a set of related classes and interfaces.
+Conceptually you can think of packages as being similar to different folders on your computer.
 
 2) What is the CLASSPATH variable all about?
+classpath and path are the evironment variables .
+usually , you have to put the jdk/bin to path so that u could use java compiler everywhere ,
+classpath is the path of your .class files .
+the classpath has a default path a period(.) which means the current directory.
+
+
 
 3) What does the package structure mirror?
+
 
 4 How do packages affect access to Java classes?
 

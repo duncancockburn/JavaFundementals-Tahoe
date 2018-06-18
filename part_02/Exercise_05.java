@@ -12,6 +12,19 @@ import java.util.Scanner;
  *
  */
 public class Exercise_05 {
-
+    public static void main(String[] args) {
+        for (int i = 0; i < 10; i++) {
+            if (i == 1) {
+                System.out.println("One");
+            } else {
+                if (i == 2) {
+                    System.out.println("Two");
+                } else {
+                    if (i > 2) {
+                        System.out.println("Other");
+                    }
+                }
+            }
+        }
+    }
 }
-

@@ -11,6 +11,20 @@ import java.util.Scanner;
  *
  */
 public class Exercise_08 {
+    public static void main(String[] args)
+        throws java.io.IOException{
+        System.out.println("enter a number between 0 and 1000000000");
+
+        Scanner scan = new Scanner(System.in);
+        int numMinutes = scan.nextInt();
+
+        int b=0;
+        while( b!= numMinutes ) {
+            b++;
+        }
+        System.out.println("value of b : " + b);
+    }
+
 
 }
 

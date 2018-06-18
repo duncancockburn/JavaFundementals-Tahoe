@@ -13,6 +13,22 @@ import java.util.Scanner;
  */
 
 public class Exercise_06 {
+    public static void main(String[] args) {
+        for (int i = 1; i < 10; i++) {
+            switch (i) {
+                case (1):
+                    System.out.println("one");
+                    break;
 
+                case (2):
+                    System.out.println("two");
+                    break;
 
+                default:
+                    System.out.println("Other");
+            }
+
+        }
+
+    }
 }

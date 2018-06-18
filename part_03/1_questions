@@ -3,36 +3,67 @@ Answer the following questions
 
 
 1) What is an instance variable?
-
+variable relating to a class
 
 2) How do you create a new object?
-
+nameOfClass nameOfObject = new nameOfClass()
 
 3) After creating a new object, how do you set that objects instance variables?
 
+2 options for this:
+By creating a constructor, who will have a list of arguments that will set up the values of the instance variables.
+By adding setters (and getters) methods to the class for setting up the instance variables.
 
 4) What is a reference variable? Why do you need to be careful with reference variables?
 
+reference variables update the object in the memory.
+
 
 5) How many methods can you have in a class?
+as many as you want
 
 
 6) How do you exit a method at any point?
-
+break
 
 7) What is the method signature required to return an "int" from a method?
-
+arguments of type int?
 
 8) Assuming "int num = 10", what is the syntax to return "num" from a method?
+int num = 10;
 
+static int method (int num)
+return num
 
 9) How do you pass a parameter to a method?
-
+adding the parameters to the parenthesis in the method
 
 10) What is the method signature for a method named sum() that takes two int parameters and returns their sum as in int?
-
+a = 1
+b = 2
+public static int method2 (int a + int b)
+return (a+b)
 
 11) What is a constructor?
+A constructor initializes an object when it is created
+They are written similar to that of a method but they do not have a return type and are used to create initial values for an object when it is created
+contructors tells the system which class the object relates to
+
+so in the class- myContructor you need to put to contructor:
+class MyFirstConstructor{
+    int x;
+    MyFirstConstructor(){
+        x = 42;
+    }
+}
+
+
+class Creator{
+    public static void main(String[] args){
+        MyFirstConstructor objectOne = new MyFirstConstructor(); // creates a new object of the class MyFirstConstructor
+        System.out.println("The value of x for objectOne is: " + objectOne.x);
+    }
+}
 
 
 12) How does Java treat a class without a constructor?

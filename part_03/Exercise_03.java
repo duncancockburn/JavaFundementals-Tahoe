@@ -27,16 +27,61 @@ class Exercise_03 {
     }
 
     // Get the name for the month using the random int you generated
+
+
     public static String getMonthName(int month) {
 
-        String monthName = "";
+        String monthname;
+        switch (month) {
+            case (1):
+                monthname= ("jan");
+                break;
+            case (2):
+                monthname = ("feb");
+                break;
+            case (3):
+                monthname = ("march");
+                break;
+            case (4):
+                monthname = ("april");
+                break;
+            case (5):
+                monthname = ("may");
+                break;
+            case (6):
+                monthname = ("june");
+                break;
+            case (7):
+                monthname = ("july");
+                break;
+            case (8):
+                monthname = ("aug");
+                break;
+            case (9):
+                monthname = ("sept");
+                break;
+            case (10):
+                monthname = ("oct");
+                break;
+            case (11):
+                monthname = ("nov");
+                break;
+            default:
+                monthname = ("december");
 
-        // use a switch statement to determine the name of the month
-        // for instance if the random int is 1 the name of month is January
 
-        return monthName;
+        }
+        return monthname;
+
     }
 }
+
+        // use a switch statement to determine the name of the month
+
+        // for instance if the random int is 1 the name of month is January
+
+
+
 
 
 

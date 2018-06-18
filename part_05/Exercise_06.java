@@ -10,18 +10,18 @@ package part_05;
 
 import java.util.Scanner;
 
-public class Exercise_06 {                                //Class
+public class Exercise_06 {                                      //Class
 
-    public static void main(String[] args) {             //main method
-        Scanner stdIn = new Scanner(System.in);         // make a scanner object
+    public static void main(String[] args) {                    //main method
+        Scanner inputNumber = new Scanner(System.in);                 // make a scanner object
+
 
         System.out.print("How many numbers do you want to print? ");
-        int iter = stdIn.nextInt();                     //enter the number of elements you want to print. = new int
-        for (int i=0;i<iter;i++) {                      // count up to the number you entered from 0
-            System.out.print(fibonacci(i) + " ");       //print the fibonacci method on each number you entered
+        int iter = inputNumber.nextInt();                    //enter the number of elements you want to print. = new int
+        for (int i=0;i<iter;i++) {                              // count up to the number you entered from 0
+            System.out.print(fibonacci(i) + " ");               //print the fibonacci method on each number you entered
         }
 
-        stdIn.close();
     }
 
     public static long fibonacci(long n) {              //fibonacci method that takes a long as a parameter

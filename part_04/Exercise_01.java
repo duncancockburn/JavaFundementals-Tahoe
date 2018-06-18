@@ -15,3 +15,28 @@ import java.util.Scanner;
  Output can be on one line or many lines. However you like.
 
  */
+
+class readandprint{
+    public static void main(String[] args)
+        throws java.io.IOException{
+
+        int[] firstTen = new int[10];                                          //create an array
+        Scanner scan = new Scanner(System.in);                               //creating the input
+
+        for(int i = 0; i<10; i++){                                               //looping around 1 to 10
+            System.out.println("Please enter the " + (i+1) + " number" );      //printing out the start
+            firstTen[i] = scan.nextInt();                                       //printing the values into the array
+        }
+
+        for(int i = 1; i <firstTen.length; i+=2){
+            System.out.println(firstTen[i]);
+        }
+
+        for(int i = firstTen.length-2; i>=1; i-=2){
+            System.out.println(firstTen[i]);
+        }
+
+
+
+    }
+}
