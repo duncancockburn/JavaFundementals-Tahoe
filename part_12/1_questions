@@ -1,12 +1,12 @@
 
 1) What is a lambda expression?
-
+acts like a method to complete a task.
 
 2) What is the general form of a lambda expression?
-
+class name = (something) -> { for
 
 3) What is a functional interface?
-
+one abstact method
 
 4) Write a lambda expression that uses the following functional interface:
 

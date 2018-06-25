@@ -3,7 +3,7 @@ package part_12;
 /**
  * Created by ryandesmond on 10/12/17.
  */
-public class LambdaSpeedDemo {
+public class LambdaSpeedDemo{
 
     public static void main(String[] args) {
 
@@ -11,7 +11,7 @@ public class LambdaSpeedDemo {
         Below is an anonymous inner class - that implements the Traditional Interface
          */
         long startAnon = System.currentTimeMillis();
-        TraditionInterface trad = new TraditionInterface() {
+        TraditionInterface trad = new TraditionInterface() {   //acts as an innerclass- laying out implementation
             @Override
             public int run(int numLoops) {
                 int num = 0;
@@ -22,10 +22,17 @@ public class LambdaSpeedDemo {
             }
         };
 
+
+
         int sum = trad.run(1000000);
         long endAnon = System.currentTimeMillis();
         System.out.println("Anonymous class time = " + (endAnon - startAnon) + " milliseconds");
         // END anonymous inner class
+
+
+
+
+
 
 
         /*
@@ -45,6 +52,12 @@ public class LambdaSpeedDemo {
         long endLambda = System.currentTimeMillis();
         System.out.println("Lambda expression time = " + (endLambda - startLambda) + " milliseconds");
         // END Lambda
+
+
+
+
+
+
 
 
         /*

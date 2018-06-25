@@ -6,7 +6,11 @@ public class SelfTestCh10 {
 
 
             for (int d = 0; d < 100; d++) {         //this is putting information into the stack
-                myStack.put(d);
+                try {
+                    myStack.put(d);
+                } catch (StackFullException e) {
+                    e.printStackTrace();
+                }
             }
 
             for (int d = 0; d < 100; d++) {
@@ -18,56 +22,40 @@ public class SelfTestCh10 {
             }
         }
     }
-
-
-
-
     class StackException {
-
-
-
-        // these members are now private
-
         private int stackArray[];                                       // this array holds the queue
         private int location;                                           // the put and get indices
-
 
         StackException(int size) {                                      // this is a contructor which is used to create an object
             stackArray = new int[size];                                 // allocate memory for queue
             location = 0;
         }                                                               // index
 
-
-
-
-
-
         // Put a ints into the stack.
-        void put(int i) {                                              //method to see whether the you can put anything else in
+        void put(int i) throws StackFullException {                                              //method to see whether the you can put anything else in
             try {
                 if (location == stackArray.length){
-                    throw new Exception();
+                    throw new StackFullException("Stack is full");
                 }
-            } catch (Exception ex) {
-                System.out.println(" -- StackController is full.");
+            } catch (Exception e) {
+                // This block will only execute if any Arithmetic exception occurs in try block
+                System.out.println("Stack is full");
+
             }
             stackArray[location++] = i;
         }
 
-
-
-
         int get() {
             try{
                 if(location == 0){
-                    throw new Exception();
+                    throw new StackEmptyException("Stack is empty");
                 }
-            } catch (Exception ex1){
+            } catch (Exception e){
                 System.out.println(" -- StackController is empty.");
                 return 0;
             }
-
             return stackArray[location--];
+
         }
     }
 

@@ -1,4 +1,8 @@
 package part_11;
 
-public class GenericQueue {
+public class GenericStack <T> {
+    int index;
+    T[] array;
+
+
 }
