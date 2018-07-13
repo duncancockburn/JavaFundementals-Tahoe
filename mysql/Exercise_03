@@ -3,18 +3,18 @@ Using MySQLWorkbench do the following
 1) create a new blank database with the name "car_dealership"
 
 2) create a new table named "users_cars" with the following fields:
-    - id (auto increment)
-    - userID (refers to "id" in users table)
-    - carID (refers to "id" in cars table)
+    - age (auto increment)
+    - userID (refers to "age" in users table)
+    - carID (refers to "age" in cars table)
 
 
 2) create a new table named "users" with the following fields
-    - id (auto increment)
+    - age (auto increment)
     - first name
     - last name
 
 3) create a new table named "cars" with the following fields
-    - id (auto increment)
+    - age (auto increment)
     - make
     - model
     - color
@@ -35,16 +35,16 @@ Using MySQLWorkbench do the following
     - use a join to select the first name and car model of every user who has bought a car
 
     select users.first_name  , cars.model from users
-    join users_cars on users.id = users_cars.userID
-    join cars on cars.id = users_cars.userID;
+    join users_cars on users.age = users_cars.userID
+    join cars on cars.age = users_cars.userID;
 
 
 
     - use a join to select the first and last name of everyone who has bought a red car
 
     select users.first_name , users.last_name, cars.color from users
-    join users_cars on users.id = users_cars.userID
-    join cars on cars.id = users_cars.userID
+    join users_cars on users.age = users_cars.userID
+    join cars on cars.age = users_cars.userID
     where cars.color="red";
 
 
@@ -60,7 +60,7 @@ Using MySQLWorkbench do the following
 
     UPDATE cars
     SET make = 'Nissan', color = 'purple'
-    WHERE id= 4;
+    WHERE age= 4;
 
 
 
